@@ -16,7 +16,7 @@ def DeviceTest(device_name,size):
         return take_time  #這樣append到SET才有東西
 
 Gpu_Set=[];  Cpu_set=[];  Size_set=[]
-for i in range(0,10001,500):
+for i in range(0,10001,100):
     TestGpu=DeviceTest("/gpu:0",i)
     TestCpu=DeviceTest("/cpu:0",i)
     print("-"*100)
@@ -25,8 +25,10 @@ for i in range(0,10001,500):
     Size_set.append(i)
 
 fig=plt.gcf()
-fig.set_size_inches(10,10)
+fig.set_size_inches(5,5)
 plt.plot(Size_set, Gpu_Set ,label='GPU')
 plt.plot(Size_set, Cpu_set ,label='CPU')
 plt.legend()
+plt.xlabel('Computation')
+plt.ylabel('Computation Time')
 plt.show()
