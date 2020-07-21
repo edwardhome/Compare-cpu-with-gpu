@@ -2,11 +2,14 @@
 ## GPU與CPU算力比較程式
 
 ## 需求套件
-### tensorflow
-### matplotlib
+ tensorflow
+ matplotlib
 
+## 使用環境
 建議使用 **Anaconda** 環境
+__https://repo.anaconda.com/archive/Anaconda3-2020.02-Windows-x86_64.exe__
 
+## 操作步驟
 安裝 tensorflow 如下
 ``` conda install tensorflow ```
 
