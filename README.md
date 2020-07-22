@@ -13,6 +13,7 @@ __https://repo.anaconda.com/archive/Anaconda3-2020.02-Windows-x86_64.exe__
 ## 操作步驟
 確認 顯示卡符合規格
 確認網址 __https://developer.nvidia.com/cuda-gpus__
+
 ![image](https://github.com/edwardhome/Compare-cpu-with-gpu/blob/master/img/NVIDIA.png)
 
 ## 下載 CUDA Toolkit
