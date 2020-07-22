@@ -1,6 +1,7 @@
 import time
 from matplotlib import pyplot as plt
 import tensorflow as tf
+from info import systeminfo
 
 def DeviceTest(device_name,size,sess):
     with tf.device(device_name):       
@@ -26,13 +27,13 @@ with tf.Session() as sess:
         Gpu_Set.append(TestGpu)
         Cpu_set.append(TestCpu)
         Size_set.append(i)
-
+name = systeminfo()
 fig=plt.gcf()
 fig.set_size_inches(10,5)
 plt.plot(Size_set, Gpu_Set ,label='GPU')
 plt.plot(Size_set, Cpu_set ,label='CPU')
 plt.legend()
-plt.title('Compare CPU with GPU')
+plt.title(name[0]+' VS '+name[1])
 plt.xlabel('Computation DATA')
 plt.ylabel('Computation Time (sec)')
 plt.savefig('Testing.png')
