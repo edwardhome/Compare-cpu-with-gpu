@@ -2,9 +2,8 @@
 ## GPU與CPU算力比較程式
 
 ## 需求套件
- >>>tensorflow
- 
- >>>matplotlib
+### tensorflow
+### matplotlib
 
 ## 使用環境
 建議使用 **Anaconda** 環境
