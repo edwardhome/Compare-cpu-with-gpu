@@ -4,6 +4,8 @@
 ## 需求套件
 ### tensorflow
 ### matplotlib
+### wmi
+
 
 ## 使用環境
 建議使用 **Anaconda** 環境
@@ -34,6 +36,8 @@ __https://repo.anaconda.com/archive/Anaconda3-2020.02-Windows-x86_64.exe__
 `pip install matplotlib` 安裝最新版本的資料包
 
 `pip show matplotlib ` 確認版本為3.3.0
+`pip install wmi` 安裝WMI 系統資訊服務
+
 
 `python main.py`執行程式
 
